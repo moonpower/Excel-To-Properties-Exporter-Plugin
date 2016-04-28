@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any">
+         <command
+               commandId="net.moon.excel.exporter.properties.command1"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="net.moon.excel.exporter.properties.command1"
+            name="properties파일 엑셀 내보내기">
+         <defaultHandler
+               class="net.moon.excel.exporter.properties.PropertiesFile">
+            <parameter
+                  name="net.moon.excel.exporter.properties.parameter1"
+                  value="net.moon.excel.exporter.properties.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+   </extension>
+
+</plugin>
